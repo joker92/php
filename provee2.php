@@ -53,7 +53,45 @@ echo "<br>";
 echo "<br>";
 
 
-echo"l'array contiene "   .count($lista).  " elementi";
+echo"l'array contiene "   .count($lista).  " elementi" ; 
+
+//ciclo for contiene 3 elementi separati dal ;  for (...;...;...,){
+echo "<br>";
+// echo $i=compaiono i risultati da 0a9
+// echo $i++= aumenta sempre di uno il valore 9+1 =10
+for($i=0 ;$i<10; $i++) {
+
+echo $i;
+
+
+
+}
+
+
+//----------------------------
+
+$nome="andrea";
+// visualizza la 3 lettera del nome partendo da 0 quindi la lettera e la r
+$nome[3]   ;
+//conta il nomero del nome andrea andrea sono 6 lettere
+strlen($nome)  ;  
+
+// ti stampa l ultima lettera del nome andrea
+$nome[strlen($nome)-1]  ; 
+
+echo "<br>";
+$nome="giuseppe";
+for($i=strlen($nome)-1 ;$i>=0; $i--) {
+
+echo $nome[$i] ;
+
+
+
+}
+
+
+
+
 
 
 
