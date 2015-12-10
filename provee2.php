@@ -78,19 +78,25 @@ strlen($nome)  ;
 
 // ti stampa l ultima lettera del nome andrea
 $nome[strlen($nome)-1]  ; 
-
+//scrivere nome al rovescio------
 echo "<br>";
 $nome="giuseppe";
 for($i=strlen($nome)-1 ;$i>=0; $i--) {
 
 echo $nome[$i] ;
 
+}
 
+//le funzioni servono per implementare un operazione comune che ci serve in dibersi punti del programma   funchtion nome della funzione ($variabile)
+
+
+function aggiungiuno ($var) {
+$var++;
+return $var ;
 
 }
 
-
-
+echo aggiungiuno (5)
 
 
 
