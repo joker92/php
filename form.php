@@ -1,7 +1,9 @@
 
 <?php
+      if (isset($_POST["nomeutente"])){
+	echo "Ciao " .  $_POST ["nomeutente"];
+      } else {
 
-
-     echo "Ciao " .  $_POST ["nomeutente"];
-
+        echo "nome non specificato " ;
+      }
 ?>
