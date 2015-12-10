@@ -84,9 +84,9 @@ $nome="giuseppe";
 for($i=strlen($nome)-1 ;$i>=0; $i--) {
 
 echo $nome[$i] ;
-
+ 
 }
-
+echo "<br>";
 //le funzioni servono per implementare un operazione comune che ci serve in dibersi punti del programma   funchtion nome della funzione ($variabile)
 
 
@@ -96,14 +96,24 @@ return $var ;
 
 }
 
-echo aggiungiuno (5)
+echo aggiungiuno (5);
+echo "<br>";
+// array associativi 
+
+$dizionario=array ("fish"=>"pesce","snail"=>"lumaca");
+
+$dizionario["cat"]="gatto";
+
+$dizionario["dog"]="cane";
 
 
 
+foreach ($dizionario as $i=>$el) {
+
+echo $i ."-".$el . "<br>";
 
 
-
-
+}
 ?>
 
 
