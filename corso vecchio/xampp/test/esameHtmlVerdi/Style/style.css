@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-color:#BCB3B3;
+	  text-align:center;
+	 }
+
+#header
+{
+ background-image:url(img/header.jpeg);
+ background-color:#FF5B5B;
+ background-position:center;
+ background-repeat:no-repeat;
+ }
+
+#header h1
+{color:white;
+position:relative;
+font-family:Verdana, Geneva, sans-serif;
+font-style:oblique;
+font-size:24px;
+}
+
+#container
+{
+ margin: auto;
+ border: solid 1px black;
+ background-color:white;
+ width:1024px;
+}
+
+#colums1
+{background-color:#06F;
+ border: solid 1px black;
+ width: 200px;
+ float:left;}
+#colums1 ul li
+{
+	list-style-type:none;
+	text-transform:uppercase;
+	
+}
+#colums1 a:link{text-decoration:none;
+color:white;}
+#colums1 a:hover{color:yellow;}
+#colums2
+{background-color:yellow;
+ border: solid 1px black;
+ width: 600x;
+}
+
+#footer
+{
+	background-color:#0CF;
+	clear:both;
+}
+#footer small
+{
+	font-size:14px;
+	color:gray;
+	text-align:center;
