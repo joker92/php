@@ -100,14 +100,17 @@ echo aggiungiuno (5);
 echo "<br>";
 // array associativi 
 
+
 $dizionario=array ("fish"=>"pesce","snail"=>"lumaca");
 
 $dizionario["cat"]="gatto";
 
 $dizionario["dog"]="cane";
 
-
-
+//asort($dizionario); ordina gli elementi dell array
+//ksort($dizionario); ordina le chiavi dell array
+//arsort($dizionario); ordina gli elementi con l alfabeto inverso 
+//krsort($dizionario); ordina  le chiavi con l alfabeto inverso 
 foreach ($dizionario as $i=>$el) {
 
 echo $i ."-".$el . "<br>";
