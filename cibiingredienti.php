@@ -1,6 +1,6 @@
 <html>
- <!--.. il codice html qui sotto ti va a fare la ricerca delle ricette sotto ..-->		
-			<form method="get">
+ <!--.. il codice html qui sotto ti va a fare la ricerca delle ricette sotto SE AL POSTO DI TUTTI I GET ANDIAMO AD ISERIRE POST NASCONDE NEL URL NASCONDE I PARAMETRI ESEMPIO SE CERCHI PANE NON ESCE NIENTE NEL URL  ..-->		
+			<form method="GET">  
 			<input type="text" name ="cibo" />
 
 			<input type="submit" value="cerca"/>
@@ -29,7 +29,7 @@
 		include "databasecibi.php";
 // questa variabile sotto va a prendere il codice html e ti va a fare la ricerca delle ricette 
 
-	if (isset($_GET	["cibo"])){
+	if (isset($_GET["cibo"])){
 
 		$cibo=$_GET["cibo"];
 
