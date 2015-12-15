@@ -28,6 +28,7 @@
 
 		}
 
+		//arosort mette in ordine decrescente dal piu prequente al meno frequente
 		arsort($frequenzaparole);
 
 		foreach($frequenzaparole as $parola=>$conteggio){
