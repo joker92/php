@@ -1,0 +1,27 @@
+scope delle variabili serve per gli array
+
+ 
+"by value" crea una copia della variabile e ci lavora sopra
+
+"by reference" prende la variabile originale e ci lavora sopra 
+
+questa funzione intrementa sempre di 1 ma viene stampato 8 xke nella 
+variabile abbiamo definito 8 come risultato ...
+..........by value......
+function  incrementa ($valore) {
+		$valore++;
+		 return $valore;
+}
+
+..la & serve per dire non prendere il contenuto della vcariabile che ti
+ passo ma un riferimento che ti passo .. 
+............by reference
+function incrementadiretto (&$valore) {
+		$valore++;
+}
+
+$totale=8;
+
+incrementaDiretto($totale) ;
+
+echo $totale;

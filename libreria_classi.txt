@@ -1,0 +1,48 @@
+
+
+
+classi
+
+
+una classe definisce la struttura di un oggetto 
+
+un oggetto e una struttura che contiene :
+	
+	dati  (proprieta)
+	Funzioni (metodi)
+
+definire una classe 
+
+<?php
+
+
+	class Indirizzo{
+
+		public $nome;
+
+		public $cognome;
+
+		public $indirizzo;
+
+		public $tel;
+
+
+}
+
+
+?>
+
+
+
+concetti fondamentali :
+dati e funzioni 
+new  per isntanziare un oggetto 
+
+-> per accedere a una proprieta oppure per richiamare un metodo , se il nome ha le parentesi e un metodo 
+$this , alla'interno di un metodo , serve mad accedere alle propruieta e ai metodi dell' oggetto su cui il metdo e stato chiamato .
+
+extends per cercare una classe derivata da una classe esistente
+
+parent:: per richiamare un metodo della classe padre 
+
+
