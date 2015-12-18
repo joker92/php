@@ -46,3 +46,65 @@ extends per cercare una classe derivata da una classe esistente
 parent:: per richiamare un metodo della classe padre 
 
 
+
+
+tipio di metodi !!
+
+unstancee method :  metodo ce si puo chiamare solo sull' istanza della classe
+
+
+static method   : metodo che si puo chiamare solo sulla classe stessa
+
+------------------------------------------------------------
+le costanti esempio NZAMPE tutte maiuscole
+
+i nomidelle classi solo con la prima lettera maiuscola
+
+le variabili e metodi iniziano e con la minuscola 
+
+-------------------------------------------------------
+
+per scvire le una stringa ci sono 2 metodi  :
+
+
+laMiaVariabile (camel case) a metodo di cammello consiste che quando inizia una parola nuova la primalettera e miuscola
+
+
+la_mia_variabile (snake case) a modo di serpente che va inserire lunder score per saparare le parole dalle altre....
+
+
+ ->serve tira fuori la proprieta classe  che vai a definire 
+
+-----------------------------------------------------------
+<?php
+
+class ruota{
+	pubblic $pressione;
+
+}
+----questa stringa sottto serve per inizializzare ------
+class automobile {
+	function__construct(){
+
+		$this->ruotaAD=new ruota();
+}
+
+}
+ 
+	public $ruotaAD;    privare $ruotaAD:il private serve per non modificare piu il 					contenuto ,public invece puo essere varita e moficata.
+	public $ruotaAS;
+	public $ruotaPD;
+	public $ruotaPS;
+
+
+
+		public function getRuotaPD(){
+			return $this->ruotaPD;
+
+}
+
+$miaauto=new automobile();
+--serve per stampare la la ruota destra e la pressione della ruota :
+echo $miaAuto->ruotaPD->pressione;
+
+
