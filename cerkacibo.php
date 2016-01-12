@@ -18,9 +18,17 @@
 
 		foreach ($cibieingredienti as $cibo => $ingr){
 //il codice qui sotto serve per trovare le parole che cerchiamo esempio (qui gli ingredienti  )
-			if(strpos($ingr, $_GET["chiave"]) > -1) {
+			$inizio=strpos($ingr, $_GET["chiave"]);
+			if( $inizio > -1) {
 				echo  $cibo ;
-				echo " (" . $ingr . ")<br/>";
+				// echo " (" . $ingr . ")<br/>";
+				$prima=substr($ingr, 0, $inizio);
+				$seconda=substr($ingr, $inizio, strlen($_GET["chiave"]));
+				$terza=substr($ingr, $inizio + strlen($_GET["chiave"]));
+				echo $prima;
+				echo "<b>".$seconda."</b>";
+				echo $terza;
+
 			}
 		}
 	}
