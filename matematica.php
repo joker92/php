@@ -105,4 +105,54 @@ echo $a."</br>".$b;
 
 ?>
 
+-----------esercizio2-------
+<?php
+$numero= -5;
 
+function modulo($numero){
+if ($numero <0) {
+
+	$numero = -$numero;
+
+}
+return  $numero;
+}
+$num=-5;
+$result =modulo($num);
+echo  8+ $return;
+?>
+----------esercizio2 con  CLASSI modulo-------
+<?php
+
+class MyNumero
+{
+	private $n;
+
+	public function __construct($numero)
+{
+	$this->n=$numero;
+	}
+	public function modulo()
+	{
+		if ($this->n <0)
+	{
+		return - $this->n;
+	}
+	return $this->n;
+	}
+	public function somma($b){
+		return $this-> + $b;
+	}
+
+
+}
+
+/*istanzio nuovo oggetto di vlasse numero */
+$a= new Numero (-5);
+$b= new Numero(100);
+
+/*eseguo modulo sull'oggetto di tipo numro */
+
+echo $a->modulo();
+echo $a->somma(90);
+?>
