@@ -73,4 +73,42 @@
 }
 
 }
+
+
+
+class Numero
+{
+	private $n;
+
+	public function __construct($numero)
+{
+	$this->n=$numero;
+	}
+
+	public function getValore() {
+		return $this->n;
+	}
+
+	public function modulo()
+	{
+		if ($this->n <0)
+	{
+		return - $this->n;
+	}
+	return $this->n;
+	}
+	public function somma($b){
+		return $this->n +	 $b;
+	}
+	public function sommaOggetto($b){
+		$ris = $this->n +	 $b->n;
+		return new Numero($ris);
+	}
+
+	public  function quadrato()
+	{
+		return $this->n * $this->n; 
+	}
+}
+
 ?>

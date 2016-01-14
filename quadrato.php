@@ -2,10 +2,10 @@
 inserisci il tuo numero per elevarlo al quadrato: 
 
 	<form method="get">
-		<input name="quadrato" type="text"></input>
+		<input name="quadrato" type="text" size="5"></input>
 		
 		<!--<input name="receipt" type="text"></input>	-->	
-		<input type="submit"/>
+		<input type="submit" value="Potenza"/>
 	</form>
 </html>
 

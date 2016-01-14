@@ -32,8 +32,9 @@
 
 ?>
 
-
+<br />
 ----------------esercizio4-------------------
+<br />
 
 <?php
 
@@ -70,7 +71,7 @@ $b=$_GET["tax"];;
 //$c=$_GET["receipt"];;
 
 
-echo $prezzo = iva($a,$b);
+echo $prezzo = iva($a,$b)."<br />"."<br />";
 
 
 //echo $risultato= $a+(($a*$b)/100);
@@ -81,7 +82,7 @@ echo $prezzo = iva($a,$b);
 
 ----------esercizio 5----------------------------
 <html>
-	<form method="get">
+	//<form method="get">
 		<input name="price" type="text"></input>
 		<input name="tax" type="text"></input>
 		<!--<input name="receipt" type="text"></input>	-->	
@@ -90,7 +91,7 @@ echo $prezzo = iva($a,$b);
 </html>
 
 
-<?
+//<?
 
 
 $a= $_GET["price"];
@@ -99,7 +100,7 @@ $b=$_GET["tax"];;
 
 list($a,$b) = array($b,$a);
 
-echo $a."</br>".$b;
+		echo $a."</br>".$b ."<br />";
 
 
 
@@ -119,12 +120,12 @@ return  $numero;
 }
 $num=-5;
 $result =modulo($num);
-echo  8+ $return;
+echo  8+ $result ;
 ?>
 ----------esercizio2 con  CLASSI modulo-------
 <?php
 
-class MyNumero
+class Numero
 {
 	private $n;
 
@@ -141,7 +142,7 @@ class MyNumero
 	return $this->n;
 	}
 	public function somma($b){
-		return $this-> + $b;
+		return $this->n +	 $b;
 	}
 
 
@@ -152,7 +153,10 @@ $a= new Numero (-5);
 $b= new Numero(100);
 
 /*eseguo modulo sull'oggetto di tipo numro */
-
-echo $a->modulo();
-echo $a->somma(90);
+echo "<br/>";
+echo "Modulo= " . $a->modulo() . "<br/>";
+echo "Somma= " . $a->somma(90) . "<br/>";
 ?>
+
+
+
