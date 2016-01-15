@@ -144,6 +144,10 @@ class Numero
 	public function somma($b){
 		return $this->n +	 $b;
 	}
+	public function sommaOggetto($b){
+		$ris = $this->n +	 $b->n;
+		return new Numero($ris);
+	}
 
 
 }
