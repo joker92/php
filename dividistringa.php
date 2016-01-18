@@ -14,9 +14,9 @@ dividi stringa :<br />
 include "libreria_classi.php";
 
 $s=new mystring($_GET["testo"]);
-//$stringadivisa = $s->dividi($_GET["dividi"]);
+$stringadivisa = $s->dividi($_GET["dividi"]);
 
-//echo $stringadivisa [0];
-//echo $stringadivisa[1];
+echo $stringadivisa [0];
+echo  $stringadivisa[1] ."</br>"."stringa evidenzia:".$_GET["dividi"]."</br>";
 echo $s->evidenzia($_GET["dividi"]);
 ?>

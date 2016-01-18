@@ -133,7 +133,7 @@ class mystring{
 
 	}
 public function dividi($s){
-			$inizio=strpos($this->testo, $s);
+			$inizio=strpos($this->testo,$s);
 			if( $inizio > -1) {
 				
 				
