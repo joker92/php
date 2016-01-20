@@ -90,3 +90,5 @@ if($partenza !=""&& $destinazione !=""){
 la distanza tra <?php echo $partenza;?> e <?php echo $destinazione;?> di <?php echo $distanza;?> km
 </body>
 </html>
+
+
