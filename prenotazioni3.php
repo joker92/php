@@ -23,6 +23,13 @@ if(isset($_POST["nfila"]) && isset($_POST["nposto"])){
 	}
 }
 
+
+
+if(isset($_POST["logout"])){
+	session_destroy();
+	header("location: /login.php");
+}
+
 ?>
 
 
@@ -115,6 +122,13 @@ il posto <?php echo $nfila;?> - <?php echo $nposto;?> e' stato liberato!!
 
 
 <a href="login.php" target="_blank"> ritorna al login</a>
+
+<br/>
+ 	<form method="post">
+ 		<input name="logout"type="submit" value="logout"></input>
+ 	</form>
+
+
 </body>
 
 </html>

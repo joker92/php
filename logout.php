@@ -13,6 +13,7 @@ if(isset($_SESSION["login_user"])&& $_SESSION["login_user"]!=""){
 }
 if(isset($_POST["logout"])){
 	session_destroy();
+	header("location: /login.php");
 }
 
 ?>
