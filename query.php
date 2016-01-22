@@ -22,3 +22,5 @@ while ($record=mysql_fetch_assoc($query)){
 	
 	echo "</tr>";
 }
+
+?>

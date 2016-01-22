@@ -1,0 +1,26 @@
+sessioni
+
+
+servono i cookie:
+-è una struttura dati simile a un dizionario/array associativo, generato dal srver chhe lo invia al client
+
+
+session_start() invia un cookie al client con i dati della sessione 
+
+
+session_destroy() invalida la sessione 
+
+
+
+dobbiamo realizzare :
+
+
+
+
+- pagina form form di login
+- pagina form form di logout 
+-funzione che verifichi use e password
+-pagina privata (visibile solo dopo il login)
+
+
+
