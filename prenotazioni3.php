@@ -1,5 +1,6 @@
 <?php
 include "authentication.php";
+//includere la libreria per il logout 
 include "database_prenotazione.php";
 
 session_start();
@@ -23,7 +24,7 @@ if(isset($_POST["nfila"]) && isset($_POST["nposto"])){
 	}
 }
 
-
+//per fare il logout di una pagina
 
 if(isset($_POST["logout"])){
 	session_destroy();
